@@ -51,7 +51,7 @@ a {
 
 .navigation {
     position: absolute;
-    width: 100vw;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -91,31 +91,29 @@ a {
     justify-content: center;
     align-items: center;
 }
-.item-work:nth-child(1) {
-    background-image: url('../image/work/bg1.webp');
+.item-work:nth-child(1),
+            :nth-child(4),
+            :nth-child(5),
+            :nth-child(7) {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+}
+.item-work:nth-child(1),
+            :nth-child(4) {
     grid-column: span 2;
+}
+.item-work:nth-child(1) {
+    background-image: url('../image/work/bg1.webp');
 }
 .item-work:nth-child(4) {
     background-image: url('../image/work/bg4.webp');
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    grid-column: span 2;
 }
 .item-work:nth-child(5) {
     background-image: url('../image/work/bg5.webp');
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
 }
 .item-work:nth-child(7) {
     background-image: url('../image/work/bg7.webp');
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
 }
 .item-work__content {
     padding: 2.9em 2.9em 2.25em;
