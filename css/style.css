@@ -348,3 +348,28 @@ a {
 .contact__button:hover::after {
     left: 150%;
 }
+
+/*--------------------------   CONTACT   ------------------------------------*/
+
+.footer {
+    background-color: var(--c-dark-white);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    padding: 4em;
+}
+.footer__title {
+    font-size: 0.65rem;
+    margin: 0;
+}
+.footer__info p {
+    font-size: 0.6rem;
+    font-style: italic;
+    margin: 0;
+}
+.footer__social {
+    display: flex;
+}
+.item-social {
+    margin: 0.5em;
+}
