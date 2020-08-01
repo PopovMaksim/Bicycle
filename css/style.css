@@ -290,3 +290,61 @@ a {
 .shop__link__button:hover::after {
    left: -5%;
 }
+
+/*--------------------------   CONTACT   ------------------------------------*/
+
+.contact {
+    text-align: center;
+}
+.contact__title {
+    padding: 4.5em 2em 1em;
+}
+.contact__heading {
+    font-size: 1rem;
+    font-weight: 400;
+    font-style: italic;
+
+    margin: 1.5em 0 0.5em;
+}
+.contact__mail {
+    margin-bottom: 4.5em;
+}
+.contact__form {
+    display: flex;
+    justify-content: center;
+    grid-gap: 0.5em;
+}
+.contact__form-mail {
+    font-size: 0.8rem;
+    font-style: italic;
+    padding: 1em;
+    opacity: 0.5;
+    border: 1px solid var(--c-gray);
+    width: 20em;
+}
+.contact__button {
+    position: relative;
+    overflow: hidden;
+}
+.contact__button_go {
+    font-size: 1rem;
+    color: #fff;
+    background-color: rgb(100, 194, 158);
+    border: none;
+    padding: 1em 1.5em;
+    cursor: pointer;
+}
+.contact__button::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 2.5em;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    transform: skewX(20deg);
+    transition: 0.5s;
+}
+.contact__button:hover::after {
+    left: 150%;
+}
