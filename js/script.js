@@ -1,3 +1,16 @@
+/*           MENU             */
+
+let menuIcon = document.querySelector('.menu-icon'),
+    nav = document.querySelector('.navigation');
+
+menuIcon.addEventListener('click', function() {
+    if (nav.classList.contains('menu-open')) {
+        nav.classList.remove('menu-open');
+    } else {
+        nav.classList.add('menu-open');
+    } 
+}, false);
+
 
 /*           SLIDER             */
 
